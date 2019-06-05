@@ -70,7 +70,7 @@ namespace HotSeatBooking.Views.Home
 
             ManageLoginsViewModel login = new ManageLoginsViewModel();
 
-            HttpContext.Current.Response.Write(Session["UserName"]);
+            //HttpContext.Current.Response.Write(Session["UserName"]);
 
             DataSet ds = new DataSet();
             SqlConnection sc = new SqlConnection("Data Source = dp200.database.windows.net; Initial Catalog = DP200; User ID = raga; Password = Super*38; Integrated Security = False");
@@ -1519,14 +1519,13 @@ namespace HotSeatBooking.Views.Home
 
                 if (cmdx.ExecuteScalar() != null)
                 {
-                    HttpContext.Current.Response.Write("Not Inserting");
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('User already booked a seat for the day!')", true);
                     sc.Close();
                 }
                 else
                 {
-                    HttpContext.Current.Response.Write("Inserting");
-                    //sc.Open();
                     cmdi.ExecuteNonQuery();
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Booking done successfully!')", true);
                     sc.Close();
 
                 }

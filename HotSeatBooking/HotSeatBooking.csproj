@@ -177,7 +177,21 @@
     <Compile Include="Controllers\BookingForm1.aspx.designer.cs">
       <DependentUpon>BookingForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\FloorLayout.aspx.cs">
+      <DependentUpon>FloorLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controllers\FloorLayout.aspx.designer.cs">
+      <DependentUpon>FloorLayout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingForm.aspx.cs">
+      <DependentUpon>LandingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controllers\LandingForm.aspx.designer.cs">
+      <DependentUpon>LandingForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,9 +212,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controllers\OfficeFloorLayout.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Controllers\BookingForm1.aspx" />
+    <Content Include="Controllers\FloorLayout.aspx" />
+    <Content Include="Controllers\LandingForm.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

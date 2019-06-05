@@ -35,7 +35,7 @@ namespace MvcLoginAppDemo.Controllers
         {
             if (Session["UserID"] != null)
             {
-                return Redirect("~/Controllers/BookingForm.aspx");
+                return Redirect("~/Controllers/LandingForm.aspx");
             }
             else
             {
