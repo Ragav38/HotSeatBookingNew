@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
     <div style="height: 460px">
     
-        <img alt="Example" src="../Images/OfficeFloorLayout.jpg" style="height: 379px; width: 379px; margin-left: 50px; margin-top: 59px" /></div>
+        <img alt="Example" src="/Images/OfficeFloorLayout.jpg" style="height: 379px; width: 379px; margin-left: 50px; margin-top: 59px" /></div>
     </form>
 </body>
 </html>
