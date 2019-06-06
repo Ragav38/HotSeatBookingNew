@@ -19,6 +19,9 @@
         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Controllers/FloorLayout.aspx">View Floor</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+        <p>
+            <asp:Image ID="Image1" runat="server" Height="315px" ImageUrl="~/Content/Image/OfficeFloorLayout.JPG" Width="573px" />
+        </p>
     </form>
 </body>
 </html>
