@@ -205,9 +205,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Controllers\OfficeFloorLayout.JPG">
+    <EmbeddedResource Include="Controllers\OfficeFloorLayout.JPG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Controllers\FloorLayout.aspx" />
