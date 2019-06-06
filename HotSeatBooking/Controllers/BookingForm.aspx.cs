@@ -1510,9 +1510,21 @@ namespace HotSeatBooking.Views.Home
                 string sqlselect;
                 string sqlinsert;
 
+                string booking_from;
+                string booking_to;
+
+                int Nbooking_to;    
+
+                booking_from = DropDownList1.Text;
+
+                booking_to = booking_from.Split(':')[0];
+                Nbooking_to = int.Parse(booking_to) + 8;
+
+                booking_to = Nbooking_to.ToString() + ":" + booking_from.Split(':')[1];
+
                 sqlselect = "SELECT seat_id FROM tblBooking WHERE user_id = " + "'" + Session["UserName"] + "'";
 
-                sqlinsert = "INSERT INTO tblBooking (seat_id, user_id, login_time) VALUES (" + "'" + ViewState[seat_id] + "'" + "," + "'" + Session["UserName"] + "'" + "," + "'" + DropDownList1.Text + "'" + ")";
+                sqlinsert = "INSERT INTO tblBooking (seat_id, user_id, booking_from, booking_to) VALUES (" + "'" + ViewState[seat_id] + "'" + "," + "'" + Session["UserName"] + "'" + "," + "'" + booking_from + "'" + "," + "'" + booking_to + "'" + ");";
 
                 SqlCommand cmdx = new SqlCommand(sqlselect, sc);
                 SqlCommand cmdi = new SqlCommand(sqlinsert, sc);
