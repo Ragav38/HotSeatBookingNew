@@ -1532,5 +1532,11 @@ namespace HotSeatBooking.Views.Home
 
             }
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("~/Home/Login");
+        }
     }
 }

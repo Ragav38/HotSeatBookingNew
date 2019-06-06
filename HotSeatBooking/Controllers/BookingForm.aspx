@@ -7,12 +7,13 @@
     <title></title>
     <style type="text/css">
         #form1 {
-            width: 613px;
+            width: 637px;
+            height: 548px;
         }
         .auto-style1 {
             text-align: left;
             width: 609px;
-            margin-top: 0px;
+            margin-top: 37px;
             margin-bottom: 0px;
         }
         .auto-style2 {
@@ -24,8 +25,15 @@
         }
     </style>
 </head>
-<body style="height: 20px; width: 653px; margin-left: 76px; margin-top: 105px">
+<body style="height: 721px; width: 653px; margin-left: 76px; margin-top: 34px">
     <form id="form1" runat="server">
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Controllers/LandingForm.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Controllers/FloorLayout.aspx">View Floor</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+        </p>
     <div class="auto-style1">
     
         <strong><span class="auto-style3">Please Select Your Seat Seat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
@@ -92,9 +100,9 @@
         <asp:Button ID="Button48" runat="server" Text="48" Width="56px" OnClick="Button48_Click" />
         <asp:Button ID="Button49" runat="server" Text="49" Width="56px" OnClick="Button49_Click" />
         <asp:Button ID="Button50" runat="server" Text="50" Width="56px" OnClick="Button50_Click" />
-        <p class="auto-style2" style="background-color: #006699">
-            <strong>Select Login Time</strong></p>
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <p class="auto-style2" style="background-color: #006699; height: 23px; margin-top: 53px;">
+            <strong>Select Login time</strong></p>
+        <asp:DropDownList ID="DropDownList1" runat="server" style="margin-left: 37px; margin-top: 14px;" Height="16px">
             <asp:ListItem>8:00</asp:ListItem>
             <asp:ListItem>8:15</asp:ListItem>
             <asp:ListItem>8:30</asp:ListItem>
@@ -122,7 +130,7 @@
             <asp:ListItem>14:00</asp:ListItem>
         </asp:DropDownList>
         <p>
-            <asp:Button ID="Button51" runat="server" Font-Bold="True" style="margin-left: 257px" Text="Book" OnClick="Button51_Click" />
+            <asp:Button ID="Button51" runat="server" Font-Bold="True" style="margin-left: 257px; margin-top: 36px;" Text="Book" OnClick="Button51_Click" Height="31px" />
         </p>
     </form>
 </body>
