@@ -546,7 +546,7 @@ namespace HotSeatBooking.Views.Home
 
             SqlCommand cmd40 = new SqlCommand("SELECT seat_id FROM tblBooking WHERE seat_id = 40", sc);
 
-            if (cmd2.ExecuteScalar() != null)
+            if (cmd40.ExecuteScalar() != null)
             {
                 Button40.BackColor = Color.Red;
                 Button40.Enabled = false;
@@ -582,7 +582,7 @@ namespace HotSeatBooking.Views.Home
 
             SqlCommand cmd43 = new SqlCommand("SELECT seat_id FROM tblBooking WHERE seat_id = 43", sc);
 
-            if (cmd2.ExecuteScalar() != null)
+            if (cmd43.ExecuteScalar() != null)
             {
                 Button43.BackColor = Color.Red;
                 Button43.Enabled = false;
@@ -642,7 +642,7 @@ namespace HotSeatBooking.Views.Home
 
             SqlCommand cmd48 = new SqlCommand("SELECT seat_id FROM tblBooking WHERE seat_id = 48", sc);
 
-            if (cmd2.ExecuteScalar() != null)
+            if (cmd48.ExecuteScalar() != null)
             {
                 Button48.BackColor = Color.Red;
                 Button48.Enabled = false;

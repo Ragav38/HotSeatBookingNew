@@ -7,25 +7,25 @@
     <title></title>
     <style type="text/css">
         #form1 {
-            width: 637px;
+            width: 1141px;
             height: 548px;
         }
         .auto-style1 {
             text-align: left;
-            width: 609px;
+            width: 583px;
             margin-top: 37px;
             margin-bottom: 0px;
         }
         .auto-style2 {
             color: #FFFFFF;
         }
-        .auto-style3 {
+        .auto-style4 {
             color: #FFFFFF;
-            background-color: #006699;
+            background-color: #003366;
         }
     </style>
 </head>
-<body style="height: 721px; width: 653px; margin-left: 76px; margin-top: 34px">
+<body style="height: 721px; width: 1145px; margin-left: 76px; margin-top: 34px; background-color: #C0C0C0;">
     <form id="form1" runat="server">
         <p>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Controllers/LandingForm.aspx">Home</asp:HyperLink>
@@ -34,7 +34,8 @@
         </p>
     <div class="auto-style1">
     
-        <strong><span class="auto-style3">Please Select Your Seat Seat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <strong><span class="auto-style4">Please Select Your Seat Seat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <br />
         <br />
         <br />
         </strong>
@@ -98,7 +99,7 @@
         <asp:Button ID="Button48" runat="server" Text="48" Width="56px" OnClick="Button48_Click" />
         <asp:Button ID="Button49" runat="server" Text="49" Width="56px" OnClick="Button49_Click" />
         <asp:Button ID="Button50" runat="server" Text="50" Width="56px" OnClick="Button50_Click" />
-        <p class="auto-style2" style="background-color: #006699; height: 23px; margin-top: 53px;">
+        <p class="auto-style2" style="background-color: #003366; height: 20px; margin-top: 53px; width: 585px;">
             <strong>Select Login time</strong></p>
         <asp:DropDownList ID="DropDownList1" runat="server" style="margin-left: 37px; margin-top: 14px;" Height="16px">
             <asp:ListItem>8:00</asp:ListItem>
