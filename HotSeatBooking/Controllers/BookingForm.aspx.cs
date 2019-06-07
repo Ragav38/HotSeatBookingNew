@@ -733,7 +733,7 @@ namespace HotSeatBooking.Views.Home
 
         public void Button4_Click(object sender, EventArgs e)
         {
-            if (Button1.BackColor == SystemColors.Control)
+            if (Button4.BackColor == SystemColors.Control)
             {
                 var a = "4";
                 ViewState[seat_id] = a;
@@ -754,7 +754,7 @@ namespace HotSeatBooking.Views.Home
             {
                 var a = "5";
                 ViewState[seat_id] = a;
-                Button1.BackColor = Color.DarkGreen;
+                Button5.BackColor = Color.DarkGreen;
             }
             else
             {
@@ -805,7 +805,7 @@ namespace HotSeatBooking.Views.Home
             {
                 var a = "8";
                 ViewState[seat_id] = a;
-                Button1.BackColor = Color.DarkGreen;
+                Button8.BackColor = Color.DarkGreen;
             }
             else
             {
@@ -1163,7 +1163,7 @@ namespace HotSeatBooking.Views.Home
             {
                 var a = "30";
                 ViewState[seat_id] = a;
-                Button1.BackColor = Color.DarkGreen;
+                Button30.BackColor = Color.DarkGreen;
             }
             else
             {
@@ -1479,7 +1479,7 @@ namespace HotSeatBooking.Views.Home
 
         public void Button50_Click(object sender, EventArgs e)
         {
-            if (Button1.BackColor == SystemColors.Control)
+            if (Button50.BackColor == SystemColors.Control)
             {
                 var a = "50";
                 ViewState[seat_id] = a;
