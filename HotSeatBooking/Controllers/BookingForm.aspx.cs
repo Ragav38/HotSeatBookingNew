@@ -73,7 +73,7 @@ namespace HotSeatBooking.Views.Home
             //HttpContext.Current.Response.Write(Session["UserName"]);
 
             DataSet ds = new DataSet();
-            SqlConnection sc = new SqlConnection("Data Source = dp200.database.windows.net; Initial Catalog = DP200; User ID = raga; Password = Super*38; Integrated Security = False");
+            SqlConnection sc = new SqlConnection("Data Source = mibi.database.windows.net; Initial Catalog = HotDesk; User ID = mibi; Password = MiB@4321; Integrated Security = False");
             sc.Open();
 
             SqlCommand cmd1 = new SqlCommand("SELECT seat_id FROM tblBooking WHERE seat_id = 1", sc);
@@ -1504,7 +1504,7 @@ namespace HotSeatBooking.Views.Home
             else
             {
                 DataSet ds = new DataSet();
-                SqlConnection sc = new SqlConnection("Data Source = dp200.database.windows.net; Initial Catalog = DP200; User ID = raga; Password = Super*38; Integrated Security = False");
+                SqlConnection sc = new SqlConnection("Data Source = mibi.database.windows.net; Initial Catalog = HotDesk; User ID = mibi; Password = MiB@4321; Integrated Security = False");
                 sc.Open();
 
                 string sqlselect;
@@ -1524,7 +1524,7 @@ namespace HotSeatBooking.Views.Home
 
                 sqlselect = "SELECT seat_id FROM tblBooking WHERE user_id = " + "'" + Session["UserName"] + "'";
 
-                sqlinsert = "INSERT INTO tblBooking (seat_id, user_id, booking_from, booking_to) VALUES (" + "'" + ViewState[seat_id] + "'" + "," + "'" + Session["UserName"] + "'" + "," + "'" + booking_from + "'" + "," + "'" + booking_to + "'" + ");";
+                sqlinsert = "INSERT INTO tblBooking (seat_id, user_id, booking_from, booking_to, booking_source) VALUES (" + "'" + ViewState[seat_id] + "'" + "," + "'" + Session["UserName"] + "'" + "," + "'" + booking_from + "'" + "," + "'" + booking_to + "'" + "," + "'" + "WEB" + "'" +");";
 
                 SqlCommand cmdx = new SqlCommand(sqlselect, sc);
                 SqlCommand cmdi = new SqlCommand(sqlinsert, sc);
